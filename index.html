@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puff Haven — A Cobblemon World</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="note-field" aria-hidden="true" id="noteField"></div>
+
+<header>
+  <div class="brand">
+    <div class="brand-blob" aria-hidden="true"></div>
+    <span class="brand-name">Puff Haven</span>
+  </div>
+  <div class="nav-links">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#path">How to Start</a>
+      <a href="#join">Join</a>
+    </nav>
+    <button class="plush-btn small" id="navCopy">Copy IP</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">🎤 A Cobblemon Server</span>
+      <h1>One Poké Ball,<br><span class="accent">Endless Adventures.</span></h1>
+      <p class="lede">Puff Haven is a cozy, semi-vanilla Cobblemon world built soft around the edges — catch, battle, and build in a land where every biome hums like a lullaby.</p>
+      <div class="hero-actions">
+        <button class="plush-btn" id="heroCopy">Copy Server IP</button>
+        <a class="plush-btn ghost" href="#about">See what's inside</a>
+      </div>
+    </div>
+    <div class="puff-stage" aria-hidden="true">
+      <div class="puff-shadow"></div>
+      <div class="puff-body">
+        <div class="puff-curl"></div>
+        <div class="ear l"></div>
+        <div class="ear r"></div>
+        <div class="eye l"></div>
+        <div class="eye r"></div>
+        <div class="blush l"></div>
+        <div class="blush r"></div>
+        <div class="mic"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="stat-strip">
+      <div class="stat"><div class="num">1</div><div class="lbl">Poké Ball to Start</div></div>
+      <div class="stat"><div class="num">∞</div><div class="lbl">Adventures Ahead</div></div>
+      <div class="stat"><div class="num">24/7</div><div class="lbl">World Uptime</div></div>
+      <div class="stat"><div class="num">0</div><div class="lbl">Pay-to-Win Items</div></div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="section-head">
+      <span class="eyebrow">Plushie-Approved Features</span>
+      <h2>Everything a trainer needs, wrapped soft.</h2>
+      <p>Puff Haven keeps Cobblemon's core loop intact and cushions the rest — no lag spikes, no grief, just a world that wants you to stay a while.</p>
+    </div>
+    <div class="grid">
+      <div class="plushcard">
+        <div class="plush-icon">🎣</div>
+        <h3>Catch</h3>
+        <p>Every biome spawns true to its type — hunt shinies, legendaries, and regional forms across a hand-tuned overworld.</p>
+      </div>
+      <div class="plushcard">
+        <div class="plush-icon">⚔️</div>
+        <h3>Battle</h3>
+        <p>Ranked PvP arenas, gym challenges, and a rotating tournament board for trainers chasing the leaderboard.</p>
+      </div>
+      <div class="plushcard">
+        <div class="plush-icon">🔁</div>
+        <h3>Trade</h3>
+        <p>A moderated trade hall and auction house keep the market fair — no scams, just trainers swapping wins.</p>
+      </div>
+      <div class="plushcard">
+        <div class="plush-icon">🏠</div>
+        <h3>Build</h3>
+        <p>Claim land with a simple /claim, decorate with the plushie furniture pack, and build a home your Pokémon actually live in.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="path">
+    <div class="section-head">
+      <span class="eyebrow">How to Start</span>
+      <h2>From download to your first battle.</h2>
+    </div>
+    <div class="path">
+      <div class="path-step">
+        <div class="path-tag">1</div>
+        <div><h3>Install Cobblemon</h3><p>Grab the Cobblemon mod for your Minecraft launcher — Fabric or Forge, whichever you run.</p></div>
+      </div>
+      <div class="path-step">
+        <div class="path-tag">2</div>
+        <div><h3>Add the server</h3><p>Copy the IP below into your multiplayer list and hit connect. No whitelist, no waiting.</p></div>
+      </div>
+      <div class="path-step">
+        <div class="path-tag">3</div>
+        <div><h3>Pick your starter</h3><p>Visit Professor's Hollow to choose your first partner and receive your one Poké Ball.</p></div>
+      </div>
+      <div class="path-step">
+        <div class="path-tag">4</div>
+        <div><h3>Say hi in Discord</h3><p>Join the community for trade meetups, event pings, and screenshots of everyone's builds.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="join-card">
+      <div class="join-left">
+        <h2>Ready when you are.</h2>
+        <p>Copy the IP, open Minecraft, and your Poké Ball is waiting at spawn.</p>
+      </div>
+      <div>
+        <div class="ip-box">
+          <code>play.puffhaven.net</code>
+          <button class="plush-btn small" id="mainCopy">Copy</button>
+        </div>
+        <div class="copy-note" id="copyNote">&nbsp;</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="brand-name">Puff Haven</span>
+  One Poké Ball, Endless Adventures. · Not affiliated with Nintendo, Game Freak, or The Pokémon Company.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
